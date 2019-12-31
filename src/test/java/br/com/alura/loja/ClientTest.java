@@ -34,7 +34,7 @@ public class ClientTest {
 	public void testaQueAConexaoComOServidorFuncionou() {
 		
 		Client client = ClientBuilder.newClient();	// Cria cliente
-		WebTarget target = client.target("http://localhost:9191");	// Defini o alvo (URI)
+		WebTarget target = client.target("http://localhost:8182");	// Defini o alvo (URI)
 
 		String  conteudo = target.path("/carrinhos/1").request().get(String.class);
 		
